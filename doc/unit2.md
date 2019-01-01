@@ -10,12 +10,12 @@
 ## App模块结构  
 1. lib项目引用JAR包  
 2. src 项目代码     
-> androidTest和test是做单元测试时用的，先不管     
-3  main 目录  
+> androidTest和test是做单元测试时用的，先不管       
+3  main 目录     
 > assets  存放不参与编译的文件，可以在程序运行时拿到文件内容。     
-> java    文件是项目代码  
-> jniLibs so库，  
-> res     资源文件  
+> java    文件是项目代码     
+> jniLibs so库，     
+> res     资源文件     
 
 ## res文件夹介绍  
 1. drawable     存放图片之类的文件  
@@ -37,8 +37,10 @@ xxxhdpi 640
 
 //获取当前设备的dpi   
 //adb获取   
+```
 adb shell wm size   
 adb shell wm density   
+```   
 //代码获取    
 ```
  DisplayMetrics dm = getResources().getDisplayMetrics();   
