@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="test_custom_key_1"
+            android:value="${custom_key_1}"></meta-data>
+        <meta-data
+            android:name="test_custom_key_2"
+            android:value="${custom_key_2}"></meta-data>
+
+        <meta-data
+            android:name="test_custom_key_3"
+            android:value="${custom_key_3}"></meta-data>
     </application>
 
 </manifest>

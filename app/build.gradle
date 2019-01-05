@@ -9,11 +9,33 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                custom_key_1: "key1",
+                custom_key_2: 2
+        ]
+        flavorDimensions "versionCode"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        channel_1 {
+            manifestPlaceholders = [
+                    custom_key_3: 'channel_1_value_3'
+            ]
+        }
+        channel_2 {
+            manifestPlaceholders = [
+                    custom_key_3: "channel_2_value_3"
+            ]
+        }
+        channel_3 {
+            manifestPlaceholders = [
+                    custom_key_3: "channel_3_value_3"
+            ]
         }
     }
 }
