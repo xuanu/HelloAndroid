@@ -25,6 +25,12 @@
             android:layout_height="wrap_content"
             android:text="获取build.gradle自定义值" />
 
+        <Button
+            android:id="@+id/getAidlValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取AIDL的数据" />
+
     </LinearLayout>
 
 </ScrollView>
