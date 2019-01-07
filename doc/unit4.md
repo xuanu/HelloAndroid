@@ -10,6 +10,7 @@ baseaidl:公用AIDL
 ###     
 1. 在**baseaidl的模块名**上右键，新键AIDL文件    
 > 异步需要回调，所以我加了个异步回调的AIDL,不需要回调的，可以不用加。    
+
 IAiInterface.aidl.....     
 ```
 package test.zeffect.cn.baseaidl;
@@ -29,6 +30,7 @@ interface IAICallback {
 
 2.  在AiApp中新增Service用来充当服务端    
 > aiapp需要引用baseaidl   
+
 AiService.java    
 ```
 public class AiService extends Service {
@@ -56,7 +58,7 @@ public class AiService extends Service {
 }
 ```    
 AndroidManifest.xml中注册刚才写的服务   
-> 需要注意添加~android:exported="true"~
+> 需要注意添加~android:exported="true"~     
 ```
 <service
             android:name=".AiService"
